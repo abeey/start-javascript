@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Page Javascripts</title>
+
+	<!-- <script src="main.js"></script> -->
+<style type="text/css">
+	#wrap {
+		background : green;
+		color : white;
+		font-size: 12px ;
+	}
+
+	#wrap2{
+		background: yellow;
+		color: black;
+		font-size: 12px;
+	}
+</style>
+
+
+</head>
+<body>
+
+	<!-- id nya 'wrap' -->
+	<div id="wrap"></div>
+
+	<div id="wrap2"></div>
+	
+</body>
+
+<script  type="text/javascript">
+	/*
+	 Aturan Varibl e JS
+	1. penamaan dimulai dengan huruf ata $ atau _
+	2. Penamaan boleh mengandung huruf , angka , underscore _ dan $
+	3. Penamaan case sensitive / huruf besar kecil
+	4. di tutup dengan tutup koma ;
+
+	Tipe data string :
+	*/
+	var text = "Landing Page ";
+	var text2 = "javascript";
+	var join = text + " - " + text2;
+	document.getElementById("wrap").innerHTML = join;
+
+
+	
+	//Tipe data Integer:
+	var bilangan = 100;
+	var bilangan1 = 200;
+
+	var sum = bilangan + bilangan1;
+
+	document.getElementById("wrap2").innerHTML = sum;
+
+
+
+
+	/*
+	getElementById : mendapatkan id dari <div>
+	innerHTML : print ke html
+	 */
+	
+
+</script>
+	
+</html>
