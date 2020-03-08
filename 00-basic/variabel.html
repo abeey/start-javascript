@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Variabel Javascript</title>
+</head>
+<body>
+
+	<div class="conainer">
+		<div id="wrap"></div>
+		<div id="wrap2"></div>
+		<div id="wrap3"></div>
+	</div>
+
+
+<script>
+
+	//dengan 'var'
+	var name = "Febri Nahrul";
+	document.getElementById("wrap").innerHTML = name;
+
+
+	//menggunakan 'let'
+	let name2 = "Febri Nahrul Khayat";
+	document.getElementById("wrap2").innerHTML = name2;
+
+
+	//variabel 'const'
+	//nilainya tidak dapat di ubah-ubah.
+	//digunakan untuk objek / array 
+	//jika ingin mengubah nilai variabel nya menggukan objek
+	const person = {
+		name : ['Febri N Kha','Januar'],
+		age : [27,23],
+	};
+	document.getElementById("wrap3").innerHTML = person.name[1] +" | "+ person.age[1];
+</script>
+	
+</body>
+</html>
