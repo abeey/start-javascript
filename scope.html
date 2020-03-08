@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Scope Javascripts</title>
+
+	<!-- <script src="main.js"></script> -->
+<style type="text/css">
+	#wrap {
+		background : green;
+		color : white;
+		font-size: 24px ;
+	}
+</style>
+
+
+</head>
+<body>
+
+	<!-- id nya 'wrap' -->
+	<div id="wrap"></div>
+	<div id="wrap2"></div>
+	<div id="wrap3"></div>
+	<div id="wrap4"></div>
+
+	
+</body>
+
+<script  type="text/javascript">
+	
+	//Scope 
+	// global dan local variabel
+	
+
+	// global var
+	var text = "Selamat Datang";
+
+
+	// fungsi
+	function printText() {
+		//local var
+		//local var hanya dapat diakses di dalam fungsi
+		var text2 = "Situs Lain";
+		return text2;
+		
+		//global var 
+		//untuk merubah local var menjadi global var, penamaan tidak menggunakan 'var'
+		text3 = "Selamat Datang - Baru";
+	}
+	printText();
+
+	document.getElementById('wrap').innerHTML = printText();
+
+</script>
+	
+</html>
