@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Function Javascripts</title>
+
+	<!-- <script src="main.js"></script> -->
+<style type="text/css">
+	#wrap {
+		background : green;
+		color : white;
+		font-size: 12px ;
+	}
+</style>
+
+
+</head>
+<body>
+
+	<!-- id nya 'wrap' -->
+	<div id="wrap"></div>
+	<div id="wrap2"></div>
+	<div id="wrap3"></div>
+	<div id="wrap4"></div>
+
+	
+</body>
+
+<script  type="text/javascript">
+	/*
+	getElementById : mendapatkan id dari <div>
+	innerHTML : print ke html
+	 */
+	
+	// fungsi
+	function printText() {
+		var text = ["Febri", "Nahrul", "Khayat"];
+		return text;
+		return text[2];
+	}
+	// panggil fungsi
+	printText();
+
+	document.getElementById("wrap").innerHTML = printText();
+	document.getElementById("wrap4").innerHTML = printText();
+</script>
+	
+</html>

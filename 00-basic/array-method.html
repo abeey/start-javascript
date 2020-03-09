@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Function Javascripts</title>
+
+	<!-- <script src="main.js"></script> -->
+<style type="text/css">
+	#wrap {
+		background : green;
+		color : white;
+		
+	}
+	#wrap3 {
+		background : red;
+		color : white;
+		
+	}
+</style>
+
+
+</head>
+<body>
+
+	<!-- id nya 'wrap' -->
+	<div id="wrap"></div>
+	<div id="wrap2"></div>
+	<div id="wrap3"></div>
+	<div id="wrap4"></div>
+
+	
+</body>
+
+<script  type="text/javascript">
+	/*
+	getElementById : mendapatkan id dari <div>
+	innerHTML : print ke html
+	 */
+	
+	// fungsi
+	function printText() {
+		var text = ["Febri", "Nahrul", "Khayat"];
+		var text2 = [" Januri", "Februari", "Maret"];
+		var gabungan  = text.concat(text2);
+		return gabungan.join(" | ");
+	}
+	// panggil fungsi
+	printText();
+
+	document.getElementById("wrap").innerHTML = printText();
+
+	//======================================================
+	//splice-> (mulai, dihapus?, isi) , splice->remove
+	//pop, = Mengahapus bagian akhir array
+	//shift() = Menghapus bagian awal array
+	//push = manambah bagian akhir
+	//unshift() = menambahkan dibagian awal
+
+
+	//fungsi baru 
+	function printText2() {
+		var name = ["Febri", "Nahrul", "Khayat"];
+		var age = [12,25,30];
+		return name;
+	}
+	printText2();
+	
+	document.getElementById("wrap2").innerHTML = printText2();
+
+
+	//======================================================
+
+	function printText3() {
+		var name = ["Febri", "Nahrul", "Khayat", "Ketiga"];
+		return name.shift();
+	}
+	printText3();
+
+	document.getElementById('wrap3').innerHTML = printText3();
+</script>
+	
+</html>
